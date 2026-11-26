@@ -1,0 +1,191 @@
+{
+  "n_luts": 15,
+  "n_paired_trials": 90,
+  "n_multi_still_trials": 180,
+  "n_cross_trials": 90,
+  "n_adv_trials": 45,
+  "paired_summary": {
+    "lut_match": {
+      "de00": 1.2885030005228562,
+      "skin_de00": 2.3649865677260338,
+      "roughness": 0.017796641037951977,
+      "inversion_rate": 0.0
+    },
+    "identity": {
+      "de00": 5.770010092056707,
+      "skin_de00": 5.33637660303931,
+      "roughness": 0.0,
+      "inversion_rate": 0.0
+    },
+    "reinhard_lab": {
+      "de00": 2.5539406664164472,
+      "skin_de00": 2.570889432593274,
+      "roughness": 0.02622896725669495,
+      "inversion_rate": 0.057958052749719415
+    },
+    "mkl_rgb": {
+      "de00": 1.7421531570843816,
+      "skin_de00": 2.08880673121939,
+      "roughness": 0.008204710350734529,
+      "inversion_rate": 0.029301750671700166
+    },
+    "mkl_oklab": {
+      "de00": 1.2919705680159346,
+      "skin_de00": 1.668302978773124,
+      "roughness": 0.0200215042522301,
+      "inversion_rate": 0.03783542495663708
+    },
+    "hm_mvgd_hm": {
+      "de00": 2.273593361913107,
+      "skin_de00": 2.5018967321750867,
+      "roughness": 0.013625516179515908,
+      "inversion_rate": 0.005502680423766282
+    },
+    "hist_match": {
+      "de00": 2.7127615048858402,
+      "skin_de00": 3.2232386611885935,
+      "roughness": 0.013697596016821008,
+      "inversion_rate": 0.0
+    }
+  },
+  "multi_still_summary": {
+    "lut_match": {
+      "de00": 4.561636561851472,
+      "skin_de00": 4.403677792889306,
+      "roughness": 0.005143626160410174,
+      "inversion_rate": 0.0
+    },
+    "identity": {
+      "de00": 5.9113786926579905,
+      "skin_de00": 5.429495934962013,
+      "roughness": 0.0,
+      "inversion_rate": 0.0
+    },
+    "reinhard_lab": {
+      "de00": 9.450626488377582,
+      "skin_de00": 8.515114525182948,
+      "roughness": 0.03263883463862066,
+      "inversion_rate": 0.06578777038057342
+    },
+    "mkl_rgb": {
+      "de00": 10.051241831880096,
+      "skin_de00": 7.415631212650688,
+      "roughness": 0.012007016396373998,
+      "inversion_rate": 0.09117386512430704
+    },
+    "mkl_oklab": {
+      "de00": 9.52877023235746,
+      "skin_de00": 8.254527736467827,
+      "roughness": 0.04115544210131515,
+      "inversion_rate": 0.07115698759480325
+    },
+    "hm_mvgd_hm": {
+      "de00": 10.843551955351527,
+      "skin_de00": 8.542784274469232,
+      "roughness": 0.029777216270144884,
+      "inversion_rate": 0.04907396779240213
+    },
+    "hist_match": {
+      "de00": 10.518912524796699,
+      "skin_de00": 8.919201681968044,
+      "roughness": 0.027588681005013424,
+      "inversion_rate": 0.0
+    }
+  },
+  "summary": {
+    "lut_match": {
+      "cross_de00": 7.173447133805239,
+      "cross_skin_de00": 5.597477389891352,
+      "cross_skin_hue_err": 5.337687044972312,
+      "adv_de00": 8.768012944618805,
+      "adv_skin_de00": 5.714184962600243,
+      "adv_skin_hue_err": 8.876200648336416,
+      "roughness": 0.006178036322141239,
+      "inversion_rate": 0.0,
+      "direct_cross_de00": 7.173447133805239,
+      "direct_adv_skin_de00": 5.714184962600243
+    },
+    "identity": {
+      "cross_de00": 5.770010092056707,
+      "cross_skin_de00": 5.33637660303931,
+      "cross_skin_hue_err": 4.883431820306798,
+      "adv_de00": 5.912225763255247,
+      "adv_skin_de00": 5.44669027962272,
+      "adv_skin_hue_err": 6.250107032126182,
+      "roughness": 0.0,
+      "inversion_rate": 0.0,
+      "direct_cross_de00": 5.770010092056707,
+      "direct_adv_skin_de00": 5.44669027962272
+    },
+    "reinhard_lab": {
+      "cross_de00": 20.53444545024386,
+      "cross_skin_de00": 18.956238824341824,
+      "cross_skin_hue_err": 24.06724697528582,
+      "adv_de00": 23.247532059824607,
+      "adv_skin_de00": 18.050341235733843,
+      "adv_skin_hue_err": 35.606926362617706,
+      "roughness": 0.060392947623628054,
+      "inversion_rate": 0.09065072016460905,
+      "direct_cross_de00": 20.51451485028518,
+      "direct_adv_skin_de00": 18.039867527426782
+    },
+    "mkl_rgb": {
+      "cross_de00": 21.903665404476236,
+      "cross_skin_de00": 20.48149056262666,
+      "cross_skin_hue_err": 32.0201430497862,
+      "adv_de00": 25.09178054681499,
+      "adv_skin_de00": 21.306388264637462,
+      "adv_skin_hue_err": 47.333112600003055,
+      "roughness": 0.024633497911933568,
+      "inversion_rate": 0.10762438144066933,
+      "direct_cross_de00": 21.912124360788837,
+      "direct_adv_skin_de00": 21.31010619014125
+    },
+    "mkl_oklab": {
+      "cross_de00": 22.157906372325684,
+      "cross_skin_de00": 20.053376923544267,
+      "cross_skin_hue_err": 28.905316985267618,
+      "adv_de00": 23.258960845994935,
+      "adv_skin_de00": 20.753021504547604,
+      "adv_skin_hue_err": 37.325585587194865,
+      "roughness": 0.05506366056378245,
+      "inversion_rate": 0.09889929386457165,
+      "direct_cross_de00": 22.14626545938913,
+      "direct_adv_skin_de00": 20.738848380868657
+    },
+    "hm_mvgd_hm": {
+      "cross_de00": 21.90317249601179,
+      "cross_skin_de00": 17.012257583901082,
+      "cross_skin_hue_err": 31.99845584171969,
+      "adv_de00": 26.596751143098885,
+      "adv_skin_de00": 25.907074473928475,
+      "adv_skin_hue_err": 58.20747119050831,
+      "roughness": 0.070452566795856,
+      "inversion_rate": 0.04709771324354658,
+      "direct_cross_de00": 22.077797876438776,
+      "direct_adv_skin_de00": 25.930755484156826
+    },
+    "hist_match": {
+      "cross_de00": 20.328485970955725,
+      "cross_skin_de00": 19.39428783152334,
+      "cross_skin_hue_err": 41.69921791034388,
+      "adv_de00": 25.756583752646648,
+      "adv_skin_de00": 27.07995133788262,
+      "adv_skin_hue_err": 62.960537399072535,
+      "roughness": 0.05619182329436932,
+      "inversion_rate": 0.0,
+      "direct_cross_de00": 20.423602592023677,
+      "direct_adv_skin_de00": 27.080266336250297
+    }
+  },
+  "gains_vs_best_baseline": {
+    "paired_de00_reduction_pct": 0.26839369091847987,
+    "paired_vs_identity_pct": 77.66896452578696,
+    "multi_still_vs_identity_pct": 22.83294982408953,
+    "multi_still_vs_best_transfer_pct": 51.73191356719693,
+    "cross_de00_reduction_pct": 64.71233940366102,
+    "adv_skin_de00_reduction_pct": 68.34306405638469,
+    "roughness_reduction_pct": 74.92018249203528,
+    "lut_match_inversion_rate": 0.0
+  }
+}

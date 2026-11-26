@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-parity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Python package & run pytest
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e "./python[dev]"
+          pytest python/tests -q
+
+      - name: Build & test lut-match-core
+        working-directory: packages/lut-match-core
+        run: |
+          npm install
+          npm run build
+          npm test
+
+      - name: Verify Python <-> TypeScript LUT parity (all 6 IDTs)
+        run: python bench/verify_py_ts_parity.py
+
+      - name: Build WebGL2 Studio
+        working-directory: web
+        env:
+          VITE_BASE: /lut-match/
+        run: |
+          npm install
+          npm run build

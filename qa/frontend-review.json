@@ -1,0 +1,74 @@
+{
+  "app": "lut-match-studio",
+  "route": "/",
+  "tool": "agent-browser",
+  "server": "vite preview (127.0.0.1:4179, terminated after capture)",
+  "viewports": [
+    {
+      "name": "desktop-dark",
+      "width": 1280,
+      "height": 800,
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "overflowX": false
+    },
+    {
+      "name": "desktop-light",
+      "width": 1280,
+      "height": 800,
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "overflowX": false
+    },
+    {
+      "name": "mobile-dark",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "overflowX": false,
+      "minTouchTargetHeight": 44,
+      "below44Count": 0
+    }
+  ],
+  "steps": [
+    {
+      "viewport": "desktop-dark",
+      "action": "Initial load on real Kodak-24 Portrait (kodim04) + Kodak 2383 Warm (Balanced, 33^3, sRGB IDT)",
+      "assertion": "canvas=427x640, health='0 inversions (0.00%) \u00b7 33\u00b3 \u00b7 319 ms', overflowX=false",
+      "passed": true
+    },
+    {
+      "viewport": "desktop-dark",
+      "action": "Switch Transfer Mode to Creative and select Teal & Orange Kodak reference still",
+      "assertion": "creativePressed=true, health='0 inversions (0.00%) \u00b7 33\u00b3 \u00b7 226 ms'",
+      "passed": true,
+      "screenshot": "qa/desktop-dark.png"
+    },
+    {
+      "viewport": "desktop-dark",
+      "action": "Adjust Skin Protection to 75%, switch IDT to Sony S-Log3 -> Rec.709 and back to sRGB / Rec.709, cycle scopes to RGB Parade",
+      "assertion": "slog3='56549 inversions (27.05%) \u00b7 33\u00b3 \u00b7 339 ms', restored srgb='0 inversions (0.00%) \u00b7 33\u00b3 \u00b7 110 ms'",
+      "passed": true
+    },
+    {
+      "viewport": "desktop-light",
+      "action": "Emulate prefers-color-scheme: light, load Kodak Coastal (kodim11) + Kodak 2383 Warm (Creative)",
+      "assertion": "bg='rgb(243, 244, 246)', primaryBtnColor='rgb(249, 250, 251)', health='0 inversions (0.00%) \u00b7 33\u00b3 \u00b7 93 ms', overflowX=false",
+      "passed": true,
+      "screenshot": "qa/desktop-light.png"
+    },
+    {
+      "viewport": "mobile-dark",
+      "action": "Resize to 390x844 dark, load Portrait + Vectorscope",
+      "assertion": "health='0 inversions (0.00%) \u00b7 33\u00b3 \u00b7 114 ms', overflowX=false, minTouchTargetHeight=44px, below44Count=0",
+      "passed": true,
+      "screenshot": "qa/mobile-dark.png"
+    }
+  ],
+  "consoleErrors": [],
+  "defectsFoundAndFixed": [
+    "Fixed light-mode contrast on .btn-primary (Download .cube) and .split-tag badges where .btn color overrode light-mode button text.",
+    "Calibrated perceptual skin-protection curve and creative-mode neutral-shift ceiling after visual inspection caught green-olive skin casts on kodim04 in Creative mode."
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "dataset": "Kodak-24 (24 real public-domain photographs)",
+  "n_photos": 24,
+  "n_luts": 15,
+  "n_paired_trials": 90,
+  "n_multi_still_trials": 180,
+  "n_cross_trials": 90,
+  "paired_summary": {
+    "lut_match": {
+      "de00": 1.4300241189282799,
+      "skin_de00": 2.4801744485384227,
+      "roughness": 0.01731904839326009,
+      "inversion_rate": 0.0
+    },
+    "identity": {
+      "de00": 5.986778881844037,
+      "skin_de00": 5.587743730332076,
+      "roughness": 0.0,
+      "inversion_rate": 0.0
+    },
+    "reinhard_lab": {
+      "de00": 2.7769591783374192,
+      "skin_de00": 2.4768150578097723,
+      "roughness": 0.02160381576145278,
+      "inversion_rate": 0.04485304433221098
+    },
+    "mkl_rgb": {
+      "de00": 1.8268831468469184,
+      "skin_de00": 1.5862070133622146,
+      "roughness": 0.008192720416924277,
+      "inversion_rate": 0.06806023194912084
+    },
+    "mkl_oklab": {
+      "de00": 1.5016546666096469,
+      "skin_de00": 1.4102995016122744,
+      "roughness": 0.01954779002149958,
+      "inversion_rate": 0.04035679820086386
+    },
+    "hm_mvgd_hm": {
+      "de00": 1.5281165222824191,
+      "skin_de00": 1.2714339938298858,
+      "roughness": 0.010980503849988997,
+      "inversion_rate": 0.025637052341597796
+    },
+    "hist_match": {
+      "de00": 2.418729024739621,
+      "skin_de00": 2.226131687324309,
+      "roughness": 0.010140242172062016,
+      "inversion_rate": 0.0
+    }
+  },
+  "multi_still_summary": {
+    "lut_match": {
+      "de00": 4.163852329927114,
+      "skin_de00": 4.207184177083734,
+      "roughness": 0.004788903650496027,
+      "inversion_rate": 0.0
+    },
+    "identity": {
+      "de00": 6.099219146520906,
+      "skin_de00": 5.510878403309834,
+      "roughness": 0.0,
+      "inversion_rate": 0.0
+    },
+    "reinhard_lab": {
+      "de00": 7.1887694634584856,
+      "skin_de00": 8.099865970481545,
+      "roughness": 0.03266784294522447,
+      "inversion_rate": 0.059578688824269636
+    },
+    "mkl_rgb": {
+      "de00": 7.982836687073738,
+      "skin_de00": 9.128514226297632,
+      "roughness": 0.010223072221896345,
+      "inversion_rate": 0.0782599245825256
+    },
+    "mkl_oklab": {
+      "de00": 7.3019890690575515,
+      "skin_de00": 8.417076979238715,
+      "roughness": 0.02971774503783568,
+      "inversion_rate": 0.05942006342890181
+    },
+    "hm_mvgd_hm": {
+      "de00": 9.583976650969102,
+      "skin_de00": 9.707838382898386,
+      "roughness": 0.03549473905281981,
+      "inversion_rate": 0.05134789073393872
+    },
+    "hist_match": {
+      "de00": 9.132249198941857,
+      "skin_de00": 8.17396305098866,
+      "roughness": 0.04024775731316556,
+      "inversion_rate": 0.0
+    }
+  },
+  "cross_summary": {
+    "lut_match": {
+      "cross_de00": 6.006110912200307,
+      "skin_de00": 5.977521186443667,
+      "skin_hue_err": 12.060053069618764,
+      "roughness": 0.006442245315868894,
+      "inversion_rate": 0.0
+    },
+    "identity": {
+      "cross_de00": 5.986778881844037,
+      "skin_de00": 5.587743730332076,
+      "skin_hue_err": 7.820428505042863,
+      "roughness": 0.0,
+      "inversion_rate": 0.0
+    },
+    "reinhard_lab": {
+      "cross_de00": 12.589796062636491,
+      "skin_de00": 15.600490693425849,
+      "skin_hue_err": 32.0965461917457,
+      "roughness": 0.05564381835176145,
+      "inversion_rate": 0.08457151481141381
+    },
+    "mkl_rgb": {
+      "cross_de00": 13.834245156659048,
+      "skin_de00": 16.169465040598617,
+      "skin_hue_err": 35.84740347137884,
+      "roughness": 0.02003982543351362,
+      "inversion_rate": 0.11853589557188042
+    },
+    "mkl_oklab": {
+      "cross_de00": 12.886436587817164,
+      "skin_de00": 15.637758420903833,
+      "skin_hue_err": 34.52309074268306,
+      "roughness": 0.055757785542382386,
+      "inversion_rate": 0.10521843009216746
+    },
+    "hm_mvgd_hm": {
+      "cross_de00": 13.673196659390742,
+      "skin_de00": 14.359949372195251,
+      "skin_hue_err": 34.806352017045,
+      "roughness": 0.052967973549535884,
+      "inversion_rate": 0.0543362922150801
+    },
+    "hist_match": {
+      "cross_de00": 13.651689204264255,
+      "skin_de00": 14.778606634297129,
+      "skin_hue_err": 32.93816128441422,
+      "roughness": 0.05680530712045302,
+      "inversion_rate": 0.0
+    }
+  },
+  "creative_cross_summary": {
+    "cross_de00": 7.593070081355048,
+    "skin_de00": 7.513560960188574,
+    "skin_hue_err": 15.738705879786412,
+    "roughness": 0.008112844481239017,
+    "inversion_rate": 0.0
+  },
+  "gains": {
+    "paired_de00_reduction_pct": 4.770107886594893,
+    "paired_vs_identity_pct": 76.11363059916776,
+    "multi_still_vs_identity_pct": 31.731386757889435,
+    "multi_still_vs_best_transfer_pct": 42.07837167275214,
+    "cross_de00_reduction_pct": 52.29381888063295,
+    "cross_skin_de00_reduction_pct": 58.37366113547889,
+    "roughness_reduction_pct": 67.85278725484706,
+    "lut_match_inversion_rate": 0.0
+  }
+}

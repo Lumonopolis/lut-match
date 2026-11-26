@@ -1,0 +1,33 @@
+{
+  "name": "lut-match-core",
+  "version": "0.1.0",
+  "description": "Zero-dependency perceptual OKLab 3D LUT solver, PAVA isotonic projection, .cube and HaldCLUT I/O",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lumonopolis/lut-match.git",
+    "directory": "packages/lut-match-core"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --experimental-strip-types --test tests/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

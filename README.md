@@ -47,7 +47,7 @@ cd ../../web && npm install && npm run dev
 ## CLI & Python
 
 ```bash
-pip install -e ./python
+pip install lut-match
 
 # Fit a 33^3 .cube LUT from one or more reference stills (plus optional HaldCLUT PNG)
 lut-match fit --src shot.png --ref look1.jpg --ref look2.jpg -o grade.cube --hald grade_hald8.png
@@ -72,7 +72,7 @@ graded = apply_lut(src, lut)
 
 ## TypeScript / JavaScript
 
-Zero-dependency core matching Python within `< 6e-8`:
+Zero-dependency core matching Python within `< 6e-8` (`npm install lut-match-core`):
 
 ```ts
 import { fitLut, generateHaldClut, serializeCube } from 'lut-match-core';

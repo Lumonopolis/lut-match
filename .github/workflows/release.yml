@@ -25,6 +25,7 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: dist-py
+          skip-existing: true
 
   publish-npm:
     runs-on: ubuntu-latest
@@ -46,4 +47,9 @@ jobs:
           npm install
           npm run build
           npm test
-          npm publish --access public
+          PKG_VER=$(node -p "require('./package.json').version")
+          if npm view "lut-match-core@${PKG_VER}" version >/dev/null 2>&1; then
+            echo "lut-match-core@${PKG_VER} is already published on npm; skipping."
+          else
+            npm publish --access public
+          fi

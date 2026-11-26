@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lumonopolis.github.io/lut-match/sitemap.xml

@@ -1,0 +1,20 @@
+# lut-match
+
+> Fit smooth, zero-inversion Adobe `.cube` 3D LUTs (`17^3`, `33^3`, `65^3`) and Level-8 HaldCLUT PNGs from one or more unrelated reference stills locally in Python, TypeScript, and WebGL2. MIT licensed, deterministic math, zero neural weights.
+
+## Links
+
+- [Browser Studio](https://lumonopolis.github.io/lut-match/): Zero-upload WebGL2 studio with split-wipe preview, live Vectorscope/Waveform/RGB Parade, and 1-click `.cube` / HaldCLUT export.
+- [GitHub Repository](https://github.com/Lumonopolis/lut-match): Full source code, CLI, tests, and visual contact sheets.
+- [README (Raw Markdown)](https://raw.githubusercontent.com/Lumonopolis/lut-match/main/README.md): Overview, ecosystem comparison, and quickstart.
+- [Benchmarks (Raw Markdown)](https://raw.githubusercontent.com/Lumonopolis/lut-match/main/BENCHMARKS.md): Kodak-24 real-photo 3-regime evaluation, synthetic suite, and 6-IDT Python/TS parity (`< 6e-8`).
+- [PyPI (`lut-match`)](https://pypi.org/project/lut-match/): `pip install lut-match`
+- [npm (`lut-match-core`)](https://www.npmjs.com/package/lut-match-core): `npm install lut-match-core`
+
+## Key Capabilities & Constraints
+
+- Works from 1 unrelated film still (`Creative` mode) or 3-5 pooled reference stills (`Balanced` mode) as well as paired before/after shots.
+- Strict `0.00%` monotonicity inversions on `srgb` and `rec709` working-space `.cube` LUTs via OKLab tone/hue-harmonic transport + cyclic PAVA projection.
+- Supports 6 Input Device Transforms: `srgb`, `rec709` (recommended behind a DaVinci Resolve CST node), `apple-log`, `slog3`, `vlog`, and `clog3`.
+- Kodak-24 benchmark (24 real photos x 15 cinematic LUTs): `1.43` dE00 paired, `4.16` dE00 5-still (vs `7.19` Reinhard), `6.01`/`7.59` single-still (`0.00%` inversions across all regimes).
+- Limitations: Global 3D LUTs cannot replicate spatial effects (film grain, halation, vignetting); single unrelated stills remain inherently ambiguous between scene palette and grade; baking wide-gamut Log IDTs introduces physically required negative off-diagonal matrix terms along extreme edges.

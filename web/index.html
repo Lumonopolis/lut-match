@@ -3,10 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lut-match</title>
+    <title>lut-match — Fit Smooth, Zero-Inversion .cube 3D LUTs from Film Stills</title>
+    <meta
+      name="description"
+      content="Fit smooth, zero-inversion Adobe .cube 3D LUTs (17³, 33³, 65³) and Level-8 HaldCLUT PNGs from one or more unrelated reference stills locally in WebGL2, Python, and TypeScript. MIT licensed."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://lumonopolis.github.io/lut-match/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="lut-match" />
+    <meta property="og:title" content="lut-match — Fit Smooth, Zero-Inversion .cube 3D LUTs from Film Stills" />
+    <meta
+      property="og:description"
+      content="Client-side WebGL2 Studio, zero-dependency TypeScript core, and Python CLI that fits skin-protected, 0%-inversion .cube 3D LUTs and HaldCLUT PNGs from reference stills."
+    />
+    <meta property="og:url" content="https://lumonopolis.github.io/lut-match/" />
+    <meta property="og:image" content="https://lumonopolis.github.io/lut-match/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Side-by-side comparison on a Kodak-24 portrait: Reinhard transfer vs lut-match zero-inversion .cube LUT" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="lut-match — Zero-Inversion .cube 3D LUTs from Film Stills" />
+    <meta
+      name="twitter:description"
+      content="Fit smooth .cube 3D LUTs & HaldCLUT PNGs locally in WebGL2, Python, and TypeScript with skin protection and 6 camera Log/Rec.709 IDTs. MIT."
+    />
+    <meta name="twitter:image" content="https://lumonopolis.github.io/lut-match/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["SoftwareApplication", "WebApplication"],
+        "name": "lut-match",
+        "softwareVersion": "0.1.0",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Any (Web Browser, macOS, Linux, Windows)",
+        "isAccessibleForFree": true,
+        "license": "https://opensource.org/licenses/MIT",
+        "url": "https://lumonopolis.github.io/lut-match/",
+        "codeRepository": "https://github.com/Lumonopolis/lut-match",
+        "image": "https://lumonopolis.github.io/lut-match/og-image.png",
+        "description": "Deterministic open-source solver and WebGL2 Studio for fitting smooth, zero-inversion Adobe .cube 3D LUTs and Level-8 HaldCLUT PNGs from one or more unrelated reference stills, with OKLab skin-tone protection and 6 camera Log/Rec.709 IDTs.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "sameAs": [
+          "https://github.com/Lumonopolis/lut-match",
+          "https://pypi.org/project/lut-match/",
+          "https://www.npmjs.com/package/lut-match-core"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main style="max-width: 760px; margin: 2rem auto; padding: 0 1rem; font-family: system-ui, sans-serif; line-height: 1.5;">
+        <h1>lut-match — Smooth, Zero-Inversion .cube 3D LUTs from Film Stills</h1>
+        <p>
+          <strong>lut-match</strong> (MIT) fits Adobe <code>.cube</code> 3D LUTs (17&sup3;, 33&sup3;, 65&sup3;) and
+          Level-8 HaldCLUT PNGs from one or more unrelated reference stills — 100% locally in WebGL2, TypeScript, and
+          Python, with zero neural weights and 0.00% monotonicity inversions in sRGB/Rec.709 working space.
+        </p>
+        <ul>
+          <li><strong>Install Python CLI:</strong> <code>pip install lut-match</code></li>
+          <li><strong>Install TypeScript core:</strong> <code>npm install lut-match-core</code></li>
+          <li><strong>Supported IDTs:</strong> sRGB / Rec.709 (Resolve CST), Apple Log, Sony S-Log3, Panasonic V-Log, Canon C-Log3</li>
+          <li><strong>Transfer modes:</strong> Balanced (Empirical-Bayes 1–5 still pooling) and Creative (expressive single-still with skin protection)</li>
+          <li><strong>Links:</strong> <a href="https://github.com/Lumonopolis/lut-match">GitHub</a> &middot; <a href="https://pypi.org/project/lut-match/">PyPI</a> &middot; <a href="https://www.npmjs.com/package/lut-match-core">npm</a> &middot; <a href="https://lumonopolis.github.io/lut-match/llms.txt">llms.txt</a></li>
+        </ul>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
